@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.container_page{
+
+    max-width: 600px;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "Google Sans Flex", sans-serif;
+    
+}
+
+/*SWITCH MODE*/
+
+.dark-mode{
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.dark-mode a{
+    color: white;
+}
+
+.dark-mode .navigation_bar a{
+    color: white;
+}
+
+#button_style{
+    all: unset;
+    cursor: pointer;
+}
+
+/*ANIMATION*/
+
+@keyframes riseUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container_page{
+     animation: riseUp 0.25s ease-out;
+}
+
+
+
+.title{
+    margin-top: 20px;
+}
+
+
+
+/*NAVBAR*/
+
+.navigation_bar{
+    margin-top: 40px;
+    
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navigation_bar a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+/*HOMEPAGE*/
+.not_current_nav{
+    opacity: 0.6;
+}
+
+
+/*PROFILE*/
+.profile_icon{
+    margin-top: 100px;
+    width: 40px;
+}
+
+.desc_image{
+    margin-top: 40px;
+    
+    font-family: "Space Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+    
+}
+
+/*LOCALFOOD*/
+
+.content_image{
+    margin-top: 20px;
+    width: 350px;
+    margin-bottom: 20px;
+
+    border-radius: 21px;
+}
